@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(270deg, rgb(254, 249, 210) 0%, rgb(255, 255, 255) 100%);
+    font-size: 1.6vw;
+    font-family: Verdana, Geneva, sans-serif;
+}
+@media screen and (min-width: 1000px) {
+  div {
+     font-size: 16px;
+  }
+}
+
+.main {
+    margin: auto;
+    max-width: 1000px;
+}
+
+.end {
+    min-height:100vh;
+}
+
+.sign {
+    position:fixed;
+    bottom:0;
+    right:0;
+    width:40%;
+    max-width: 400px;
+    height:1.4em;
+    text-align: left;
+    background-color: #fff782;
+    border-style: solid;
+    border-color: #fee24d;
+    border-width: 0.25em 0px 0px 0.25em;
+    font-variant: small-caps;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 55px;
+  margin: -55px 0 0;
+}
+
+h1 {
+    margin-left: 0.5%;
+}
+
+h2 {
+    margin-left: 7%;
+}
+
+h3 {
+    margin-left: 3%;
+}
+
+li a:link {
+    color: black;
+    text-decoration: none;
+}
+
+li a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover {
+    
+}
+
+li a:active {
+    
+}
+
+img#head {
+    width: 100%;
+    height: auto;
+}
+
+#sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.navbar {
+    border-top-style: solid;
+    border-top-width: 0.5em;
+    border-top-color: #fee24d;
+    list-style-type: none;
+    background-color: #fff782;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li.active{
+    background-color: #fefbe1;
+    color: black;
+}
+
+li.nav {
+    display: block;
+    padding: 1.5% 1.5%;
+    color: black;
+    text-align: center;
+    max-width: 22%;
+    font-size: 1em;
+}
+
+li.nav:hover:not(.active) {
+    background-color: #fee24d;
+}
+
+.left {
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+#construction {
+    padding-top:60px;
+    width:80%;
+    max-width: 1000px;
+    margin:auto;
+}
+
+.table-1 {
+    position: fixed;
+    border-style: solid;
+    border-color: #fee24d;
+    border-width: 0.5em;
+    background-color: #fff782;
+    right: 0.5%;
+    width: 21%;
+    margin: 2% 0%;
+    overflow: hidden;
+    max-width: 210px;
+}
+
+.contents {
+    list-style-type:circle;
+    padding-left: 20% 
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img-container {
+    float: left;
+    width: 25%;
+    padding: 0.5% 0.6%;
+    opacity: 1.0;
+    filter: alpha(opacity=50);
+}
+
+.img-container:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=100);
+}
+
+@media screen and (min-width: 1450px) {
+  .img-container {
+      width: 33.33%;
+  }
+}
+
+p.sub {
+    visibility:hidden;
+    margin: 0;
+    font-style: italic;
+    font-size: 0.75em;
+    color:gray;
+}
+
+div:hover > p.sub {
+    visibility: visible;
+}
+
+div.st p.text:first-of-type::first-letter{
+    font-size: 1.5em;
+    color:#eea21d
+}
+
+p.text {
+    width: 65%;
+    margin-left: 3%;
+}
+
+@media screen and (min-width: 1600px) {
+  p.text {
+      width: 94%;
+  }
+}
+
+.table-2 {
+    position: fixed;
+    border-style: solid;
+    border-color: #fee24d;
+    border-width: 0.5em;
+    background-color: #fff782;
+    right: 0.5%;
+    width: 30%;
+    margin: 0 0;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+table.mutation {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    width:40%;
+    border-style: solid;
+    border-color: #fee24d;
+    border-width: 0.5em;
+    border-collapse: collapse;
+}
+
+table.mutation th, td {
+    text-align: center;
+    padding:0.3em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fee24d;
+}
+
+table.mutation th {
+    background-color: #fff782;
+}
+
+table.mutation tr:nth-of-type(1) th {
+    border-right-width:3px;
+    border-bottom-width: 3px;
+}
+
+table.mutation tr:nth-of-type(2) th {
+    border-bottom-width: 3px;
+}
+
+table.mutation tr:nth-of-type(2) th:nth-of-type(2) {
+    border-right-width: 3px;
+}
+
+table.mutation tr td:nth-of-type(2) {
+    border-right-width: 3px;
+}
+
+table.mutation td {
+    background-color: #fefbe1;
+}
+
+.header {
+    font-size: 1.45em;
+}
+
+.example-1 {
+    margin-bottom: 0.15em;
+}
+
+.example-2 {
+    margin-top:0;
+}
+
+table.tableJ {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width:70%;
+    border-style: solid;
+    border-color: #fee24d;
+    border-width: 0.5em;
+    border-collapse: collapse;
+}
+
+table.tableJ th, td {
+    text-align: center;
+    padding:0.3em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fee24d;
+    width: 20%;
+}
+
+table.tableJ th {
+    background-color: #fff782;
+}
+
+table.tableJ td {
+    background-color: #fefbe1;
+}
+
+
+
+
+.wczytaj {
+    width: 13.26%;
+    margin-bottom: 1em
+}
+
+#table1 {
+    margin-left: 0.8%;
+}
+
+#confirm {
+    margin-top: 2%;
+    margin-left: 5.8%; 
+}
+
+#tabela {
+    margin-left: 5%;
+}
+
+.przycisk {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    width: 13.26%;
+}
+
+.przycisk1 {
+    margin-left: 0.8%;
+}
+
+
+
+#test {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.output {
+    border-style: solid;
+    border-width: 0.5em;
+    border-color: #fee24d;
+    width: 20%;
+    margin-bottom: 1em;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: #fff782;
+    position: relative;
+}
